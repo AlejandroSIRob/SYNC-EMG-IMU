@@ -1,11 +1,15 @@
 """
-FUSION MULTIMODAL CIENTÍFICA (V44 - Integrated Library + IMU)
+FUSION MULTIMODAL CIENTÍFICA (V - Integrated Library + IMU)
 -------------------------------------------------------------
 Autor: Alejandro Solar Iglesias
 Mejora Final:
   - Mantiene la lógica V39 (EMG perfecto con librería).
   - Añade reporte gráfico para IMUs (Aceleración).
   - Todo sincronizado al 3º impacto.
+Para ejecuatar: 
+  - python Sync.py --ruta_toma "ruta/a/la/toma" (o con --emg y --imu para archivos específicos)
+  - python .\Sync.py --emg .\Data\EMG\2026-02-04-19-37_v1.csv --imu .\Data\IMU\cinematica_v1.sto      
+
 """
 
 import pandas as pd
@@ -18,6 +22,7 @@ import glob
 import sys
 import re
 import argparse
+
 # =========================================================
 # 0. AÑADIR LA CARPETA ANTERIOR AL PATH DE PYTHON
 # =========================================================
